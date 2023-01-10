@@ -7,4 +7,5 @@ the bulk search in google and save the output in another excel file.
 * Running in google co lab can solve the search limits problem 
 ## Limitation:
 * Depends of the python google library 
-* Certain search limits due too many request while running locally 
+* Certain search limits due too many request while running locally
+* Can not replace the missing value at the moment
