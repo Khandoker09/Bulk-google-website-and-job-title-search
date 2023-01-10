@@ -1,7 +1,7 @@
 '''
 Date: 10.01.23
 Author: Khandoker Tanjim Ahammad 
-Purpose: Bulk google search form a csv 
+Purpose: Bulk google search form a csv or excel file for home page or linkedin page 
 '''
 import pandas as pd
 from googlesearch import search
