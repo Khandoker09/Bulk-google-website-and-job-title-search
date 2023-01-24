@@ -26,3 +26,22 @@ print (df.info())
 print(df.head)
 df.to_csv('test1.csv')
 ################################################################################
+# for fixing the datafram with rows and columns 
+################################################################################
+df=pd.read_csv('test1.csv', index_col=False)
+print(df.info())
+df['company']=df['Unnamed: 0']
+print(df.company)
+
+df3 = df[df.index % 11 == 0]
+
+df2=df[df['company'].str.contains("https")]
+df2=df2[['company']]
+df2.rename(columns={'company':'website'}, inplace=True)
+print(df2.head(10))
+#print(df3.head(20))
+df4=pd.DataFrame(np.repeat(df3.company, 10))
+print(df4.head(20))
+print(df4.info())
+# new_df = df4.merge(df2)
+# print(new_df.head(20))
