@@ -1,12 +1,4 @@
 '''
-Date: 10.01.23
-Author: Khandoker Tanjim Ahammad 
-Purpose: Bulk google search form a csv or excel file for home page or linkedin page 
-'''
-import pandas as pd
-from googlesearch import search
-from random import randint
-import time'''
 Date: 09.01.23
 Author: Khandoker Tanjim Ahammad
 Purpose: search a term in google and save it in a excel file 
